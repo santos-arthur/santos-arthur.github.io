@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalhes do Animal - Adote um Amigo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class'
+      };
+    </script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-100 dark:bg-gray-950 text-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-green-200 dark:bg-gray-900 px-4 md:px-24 py-4 flex justify-between items-center shadow-md h-18">
+      <div class="w-fit flex flex-row items-center gap-8">
+        <button id="menu-toggle" aria-label="Abrir menu" class="p-2 bg-green-200 dark:bg-green-800 rounded shadow-md">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        <div class="flex items-center">
+          <div class="w-10 h-10 bg-green-300 dark:bg-green-800 rounded-full flex items-center justify-center mr-2">
+            <img src="logo.png" alt="Logo" class="w-6 h-6 dark:invert" />
+          </div>
+          <a href="index.html" class="text-2xl font-bold text-green-900 dark:text-green-100">Adote um Amigo</a>
+        </div>
+      </div>
+      <button onclick="toggleTheme()" id="theme-toggle" aria-label="Toggle theme" class="relative w-16 h-8 bg-green-300 dark:bg-green-800 rounded-full focus:outline-none focus:ring-2 focus:ring-green-500 flex items-center">
+        <span id="toggle-slider" class="relative left-1 w-6 h-6 bg-white dark:bg-green-300 rounded-full transition-transform duration-300 transform flex items-center justify-center">
+          <svg id="sun-icon" class="block dark:hidden w-4 h-4 text-green-950" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+          </svg>
+          <svg id="moon-icon" class="hidden dark:block w-4 h-4 text-green-950" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path d="M12 2a10 10 0 1 0 9.95 12.15A7.5 7.5 0 1 1 12 2z" fill="currentColor" />
+          </svg>
+        </span>
+      </button>
+    </header>
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="fixed top-0 left-0 w-64 h-full bg-green-100 dark:bg-green-900 transform -translate-x-full transition-transform duration-300 z-40 shadow-2xl">
+      <div class="flex justify-between items-center p-4 border-b border-green-300 dark:border-green-700">
+        <h2 class="text-xl font-semibold text-green-900 dark:text-green-100">Menu</h2>
+        <button id="close-sidebar" aria-label="Fechar menu" class="p-2 rounded hover:bg-green-200 dark:hover:bg-green-800">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-green-900 dark:text-green-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <nav class="p-4 space-y-4">
+        <a href="index.html" class="flex items-center text-gray-800 dark:text-gray-100 hover:underline">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 mr-2">
+            <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+            <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+          </svg>
+          Início
+        </a>
+        <a href="animais.html" class="flex items-center text-gray-800 dark:text-gray-100 hover:underline">
+          <svg height="24px" width="24px" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.839 48.839" fill="currentColor" class="size-6 mr-2">
+            <path d="M39.041,36.843c2.054,3.234,3.022,4.951,3.022,6.742c0,3.537-2.627,5.252-6.166,5.252
+              c-1.56,0-2.567-0.002-5.112-1.326c0,0-1.649-1.509-5.508-1.354c-3.895-0.154-5.545,1.373-5.545,1.373
+              c-2.545,1.323-3.516,1.309-5.074,1.309c-3.539,0-6.168-1.713-6.168-5.252c0-1.791,0.971-3.506,3.024-6.742
+              c0,0,3.881-6.445,7.244-9.477c2.43-2.188,5.973-2.18,5.973-2.18h1.093v-0.001c0,0,3.698-0.009,5.976,2.181
+              C35.059,30.51,39.041,36.844,39.041,36.843z M16.631,20.878c3.7,0,6.699-4.674,6.699-10.439S20.331,0,16.631,0
+              S9.932,4.674,9.932,10.439S12.931,20.878,16.631,20.878z M10.211,30.988c2.727-1.259,3.349-5.723,1.388-9.971
+              s-5.761-6.672-8.488-5.414s-3.348,5.723-1.388,9.971C3.684,29.822,7.484,32.245,10.211,30.988z M32.206,20.878
+              c3.7,0,6.7-4.674,6.7-10.439S35.906,0,32.206,0s-6.699,4.674-6.699,10.439C25.507,16.204,28.506,20.878,32.206,20.878z
+              M45.727,15.602c-2.728-1.259-6.527,1.165-8.488,5.414s-1.339,8.713,1.389,9.972c2.728,1.258,6.527-1.166,8.488-5.414
+              S48.455,16.861,45.727,15.602z" />
+          </svg>
+          Animais
+        </a>
+        <a href="sobre.html" class="flex items-center text-gray-800 dark:text-gray-100 hover:underline">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 mr-2">
+            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 0 1 .67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 1 1-.671-1.34l.041-.022ZM12 9a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
+          </svg>
+          Sobre
+        </a>
+        <a href="contato.html" class="flex items-center text-gray-800 dark:text-gray-100 hover:underline">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 mr-2">
+            <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+          </svg>
+          Contato
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="container mx-auto px-4 md:px-6 py-10 flex-grow">
+      <section id="detalhe-animal" class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md max-w-3xl mx-auto flex flex-col items-center">
+        <!-- Detalhes do animal serão carregados aqui via JavaScript -->
+      </section>
+      <!-- Modal para imagem em fullscreen -->
+      <div id="modal-imagem" class="fixed inset-0 z-50 items-center justify-center bg-black bg-opacity-80 hidden">
+        <img id="modal-img" src="" alt="Imagem ampliada" class="max-h-[90vh] max-w-[90vw] rounded-xl shadow-2xl border-4 border-green-300 dark:border-green-700" />
+      </div>
+    </main>
+
+    <!-- Chamada para ação -->
+    <section class="bg-green-200 dark:bg-green-900 py-10 px-4 md:px-6 flex flex-col items-center mt-10">
+      <h2 class="text-2xl font-bold mb-4 text-green-900 dark:text-green-100">Quer adotar este amigo?</h2>
+      <a href="contato.html" class="bg-green-500 text-white px-8 py-3 rounded-lg text-lg font-semibold shadow hover:bg-green-600 dark:hover:bg-green-400 transition">Entre em contato</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-200 dark:bg-green-950 text-center py-4 text-sm text-gray-700 dark:text-gray-300">
+      Feito com 🧡 por <a href="https://github.com/santos-arthur" target="_blank" class="underline hover:text-green-600">Arthur Santos</a>
+    </footer>
+    <script>
+      // Função para obter parâmetros da URL
+      function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+      }
+
+      // Carrega detalhes do animal
+      fetch('animais.json')
+        .then(response => response.json())
+        .then(animais => {
+          const id = getQueryParam('animal');
+          const animal = animais.find(a => a.id === id);
+          const container = document.getElementById('detalhe-animal');
+
+          if (!animal) {
+            container.innerHTML = '<p class="text-red-600">Animal não encontrado.</p>';
+            return;
+          }
+
+          // Galeria de imagens
+          let imagensHtml = '';
+          if (animal.imagens && animal.imagens.length > 0) {
+            imagensHtml = `
+              <div class="w-full flex flex-col items-center mb-6">
+                <img src="${animal.imagens[0]}" alt="${animal.nome}" class="img-detalhe rounded-xl shadow-lg w-full max-w-md h-72 object-cover border-4 border-green-200 dark:border-green-700 mb-4 cursor-pointer transition hover:scale-105" />
+                <div class="flex gap-2 flex-wrap justify-center">
+                  ${animal.imagens.slice(1, 5).map(img => `<img src="${img}" alt="${animal.nome}" class="img-detalhe w-20 h-20 object-cover rounded-lg border-2 border-green-100 dark:border-green-800 hover:border-green-400 transition cursor-pointer" />`).join('')}
+                </div>
+              </div>
+            `;
+          }
+
+          // Traits
+          let traitsHtml = '';
+          if (animal.tracos && animal.tracos.length > 0) {
+            traitsHtml = `
+              <div class="flex flex-wrap gap-2 mb-2 mt-2">
+                ${animal.tracos.map(traco => `<span class="bg-green-50 dark:bg-green-900 text-green-700 dark:text-green-300 px-2 py-1 rounded text-xs font-medium border border-green-200 dark:border-green-700">${traco}</span>`).join('')}
+              </div>
+            `;
+          }
+
+          // Doenças
+          let doencasHtml = '';
+          if (animal.doencas && animal.doencas.length > 0 && animal.doencas !== 'Não') {
+            doencasHtml = `
+              <div class="mt-4">
+                <h4 class="font-semibold text-green-800 dark:text-green-200 mb-1">Condições de saúde:</h4>
+                <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 text-sm">
+                  ${(Array.isArray(animal.doencas) ? animal.doencas : [animal.doencas]).map(d => `<li>${d}</li>`).join('')}
+                </ul>
+              </div>
+            `;
+          }
+
+          container.innerHTML = `
+            ${imagensHtml}
+            <div class="w-full flex flex-col gap-2 items-center mb-4">
+              <div class="flex items-center gap-2 mb-2">
+                <h2 class="text-3xl font-bold text-green-900 dark:text-green-100">${animal.nome}</h2>
+                <span class="px-2 py-1 rounded bg-green-100 dark:bg-green-800 text-green-700 dark:text-green-300 text-xs font-semibold">${animal.raca_pt}</span>
+                <span class="px-2 py-1 rounded bg-green-200 dark:bg-green-700 text-green-900 dark:text-green-100 text-xs font-medium">Idade: ${animal.idade} ano${animal.idade > 1 ? 's' : ''}</span>
+              </div>
+              ${traitsHtml}
+            </div>
+            <p class="text-gray-700 dark:text-gray-300 text-base mb-2 text-center">${animal.descricao || ''}</p>
+            ${doencasHtml}
+            <a href="contato.html" class="mt-6 inline-block bg-green-500 text-white px-8 py-3 rounded-lg text-lg font-semibold shadow hover:bg-green-600 dark:hover:bg-green-400 transition">Quero adotar este amigo</a>
+          `;
+
+          // Imagem fullscreen modal logic
+          setTimeout(() => {
+            const modal = document.getElementById('modal-imagem');
+            const modalImg = document.getElementById('modal-img');
+            document.querySelectorAll('.img-detalhe').forEach(img => {
+              img.addEventListener('click', () => {
+                modalImg.src = img.src;
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+              });
+            });
+            // Fechar modal ao clicar fora da imagem
+            modal.addEventListener('click', (e) => {
+              if (e.target === modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                modalImg.src = '';
+              }
+            });
+            // Fechar modal com ESC
+            document.addEventListener('keydown', (e) => {
+              if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                modalImg.src = '';
+              }
+            });
+          }, 100);
+        });
+    </script>
+  </body>
+</html>

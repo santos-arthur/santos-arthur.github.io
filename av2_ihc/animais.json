@@ -1,0 +1,403 @@
+[
+  {
+    "id": "e713b07a-72ba-4287-8498-fb978087e8fd",
+    "nome": "Rex",
+    "idade": 4,
+    "descricao": "Rex é um São Bernardo de porte imponente, mas com um coração doce e gentil. Crescido em regiões montanhosas, ele tem um instinto natural de resgate e adora o frio.",
+    "tracos": [
+      "gentil",
+      "pacífico",
+      "bom com crianças"
+    ],
+    "doencas": [
+      "Displasia coxofemoral"
+    ],
+    "imagens": [
+      "https://images.dog.ceo/breeds/stbernard/n02109525_11445.jpg",
+      "https://images.dog.ceo/breeds/stbernard/n02109525_10743.jpg",
+      "https://images.dog.ceo/breeds/stbernard/n02109525_11732.jpg",
+      "https://images.dog.ceo/breeds/stbernard/n02109525_12392.jpg",
+      "https://images.dog.ceo/breeds/stbernard/n02109525_13988.jpg",
+      "https://images.dog.ceo/breeds/stbernard/n02109525_15746.jpg",
+      "https://images.dog.ceo/breeds/stbernard/n02109525_17182.jpg",
+      "https://images.dog.ceo/breeds/stbernard/n02109525_7085.jpg",
+      "https://images.dog.ceo/breeds/stbernard/n02109525_8312.jpg",
+      "https://images.dog.ceo/breeds/stbernard/n02109525_883.jpg"
+    ],
+    "raca": "Stbernard",
+    "raca_pt": "São Bernardo"
+  },
+  {
+    "id": "24c102b0-ebb2-4603-8bbd-2c3f558d47c6",
+    "nome": "Bella",
+    "idade": 2,
+    "descricao": "Pequena mas corajosa, Bella é uma Affenpinscher extremamente esperta. Ela vigia tudo à sua volta com olhos atentos.",
+    "tracos": [
+      "ativo",
+      "destemido",
+      "vigilante"
+    ],
+    "doencas": "Não",
+    "imagens": [
+      "https://images.dog.ceo/breeds/affenpinscher/n02110627_2416.jpg",
+      "https://images.dog.ceo/breeds/affenpinscher/n02110627_11811.jpg",
+      "https://images.dog.ceo/breeds/affenpinscher/n02110627_11783.jpg",
+      "https://images.dog.ceo/breeds/affenpinscher/n02110627_11858.jpg",
+      "https://images.dog.ceo/breeds/affenpinscher/n02110627_12003.jpg",
+      "https://images.dog.ceo/breeds/affenpinscher/n02110627_12025.jpg",
+      "https://images.dog.ceo/breeds/affenpinscher/n02110627_12556.jpg",
+      "https://images.dog.ceo/breeds/affenpinscher/n02110627_13014.jpg",
+      "https://images.dog.ceo/breeds/affenpinscher/n02110627_2894.jpg",
+      "https://images.dog.ceo/breeds/affenpinscher/n02110627_3972.jpg"
+    ],
+    "raca": "Affenpinscher",
+    "raca_pt": "Affenpinscher"
+  },
+  {
+    "id": "5104ed36-3123-4db1-8f1a-2b79dbcfa65a",
+    "nome": "Max",
+    "idade": 5,
+    "descricao": "Max é um Airedale aventureiro que não recusa uma corrida no parque. Ama desafios físicos e mentais.",
+    "tracos": [
+      "ativo",
+      "inteligente",
+      "afetuoso"
+    ],
+    "doencas": [
+      "Dermatite atópica"
+    ],
+    "imagens": [
+      "https://images.dog.ceo/breeds/airedale/n02096051_1110.jpg",
+      "https://images.dog.ceo/breeds/airedale/n02096051_2432.jpg",
+      "https://images.dog.ceo/breeds/airedale/n02096051_2556.jpg",
+      "https://images.dog.ceo/breeds/airedale/n02096051_5234.jpg",
+      "https://images.dog.ceo/breeds/airedale/n02096051_5389.jpg",
+      "https://images.dog.ceo/breeds/airedale/n02096051_5467.jpg",
+      "https://images.dog.ceo/breeds/airedale/n02096051_5952.jpg",
+      "https://images.dog.ceo/breeds/airedale/n02096051_6315.jpg",
+      "https://images.dog.ceo/breeds/airedale/n02096051_8989.jpg",
+      "https://images.dog.ceo/breeds/airedale/n02096051_9327.jpg"
+    ],
+    "raca": "Airedale",
+    "raca_pt": "Airedale Terrier"
+  },
+  {
+    "id": "987bfaff-5513-4e0e-8e6f-e6e0d84b7359",
+    "nome": "Luna",
+    "idade": 3,
+    "descricao": "Luna é uma Akita silenciosa e nobre. Gosta de ambientes tranquilos e observa tudo com uma calma impressionante.",
+    "tracos": [
+      "leal",
+      "protetora",
+      "reservada"
+    ],
+    "doencas": "Não",
+    "imagens": [
+      "https://images.dog.ceo/breeds/akita/512px-Akita_inu.jpg",
+      "https://images.dog.ceo/breeds/akita/512px-Ainu-Dog.jpg",
+      "https://images.dog.ceo/breeds/akita/Akita_Inu_dog.jpg",
+      "https://images.dog.ceo/breeds/akita/Akita_hiking_in_Shpella_e_Pellumbasit.jpg",
+      "https://images.dog.ceo/breeds/akita/Akita_inu_blanc.jpg",
+      "https://images.dog.ceo/breeds/akita/An_Akita_Inu_resting.jpg",
+      "https://images.dog.ceo/breeds/akita/Japaneseakita.jpg"
+    ],
+    "raca": "Akita",
+    "raca_pt": "Akita"
+  },
+  {
+    "id": "17361095-a793-40e5-9e3f-dc98e6fbc7ab",
+    "nome": "Charlie",
+    "idade": 1,
+    "descricao": "Charlie é um kelpie elétrico, criado para pastorear. Extremamente obediente e atento.",
+    "tracos": [
+      "inteligente",
+      "treinável",
+      "ativo"
+    ],
+    "doencas": "Não",
+    "imagens": [
+      "https://images.dog.ceo/breeds/australian-kelpie/IMG_2599.jpg",
+      "https://images.dog.ceo/breeds/australian-kelpie/IMG_3675.jpg",
+      "https://images.dog.ceo/breeds/australian-kelpie/IMG_4918.jpg",
+      "https://images.dog.ceo/breeds/australian-kelpie/IMG_7387.jpg",
+      "https://images.dog.ceo/breeds/australian-kelpie/Resized_20200214_191118_346649120350209.jpg",
+      "https://images.dog.ceo/breeds/australian-kelpie/Resized_20200303_233358_108952253645051.jpg",
+      "https://images.dog.ceo/breeds/australian-kelpie/Resized_20200416_142905_108884348190285.jpg",
+      "https://images.dog.ceo/breeds/australian-kelpie/Resized_20201114_133404_109264920155921.jpg"
+    ],
+    "raca": "Australian Kelpie",
+    "raca_pt": "Kelpie Australiano"
+  },
+  {
+    "id": "dc008820-dd26-41ec-a184-3eec171f345e",
+    "nome": "Molly",
+    "idade": 6,
+    "descricao": "Este cão é um Dachshund alegre e persistente. Com corpo alongado e pernas curtas, ele adora explorar tocas e caçar pequenos animais. Apesar do tamanho, tem uma personalidade forte.",
+    "tracos": [
+      "tranquila",
+      "afável",
+      "fofa"
+    ],
+    "doencas": [
+      "Doença do disco intervertebral"
+    ],
+    "imagens": [
+      "https://images.dog.ceo/breeds/dachshund/dachshund-1920_640.jpg",
+      "https://images.dog.ceo/breeds/dachshund/dachshund-6.jpg",
+      "https://images.dog.ceo/breeds/dachshund/dachshund-7.jpg",
+      "https://images.dog.ceo/breeds/dachshund/dachshund-in-jacket.jpg",
+      "https://images.dog.ceo/breeds/dachshund/dog-1083690_640.jpg",
+      "https://images.dog.ceo/breeds/dachshund/dog-2643027_640.jpg",
+      "https://images.dog.ceo/breeds/dachshund/dog-495133_640.jpg",
+      "https://images.dog.ceo/breeds/dachshund/dog-55140_640.jpg",
+      "https://images.dog.ceo/breeds/dachshund/foxhound-53951_640.jpg",
+      "https://images.dog.ceo/breeds/dachshund/puppy-1006024_640.jpg"
+    ],
+    "raca": "Dachshund",
+    "raca_pt": "Dachshund"
+  },
+  {
+    "id": "4381d289-a034-4391-a9c6-a2eade2e872e",
+    "nome": "Buddy",
+    "idade": 2,
+    "descricao": "Buddy é um Beagle animado com um olfato afiadíssimo. Excelente farejador e muito sociável.",
+    "tracos": [
+      "curioso",
+      "energético",
+      "sociável"
+    ],
+    "doencas": "Não",
+    "imagens": [
+      "https://images.dog.ceo/breeds/beagle/n02088364_13630.jpg",
+      "https://images.dog.ceo/breeds/beagle/n02088364_11828.jpg",
+      "https://images.dog.ceo/breeds/beagle/n02088364_10947.jpg",
+      "https://images.dog.ceo/breeds/beagle/n02088364_10354.jpg",
+      "https://images.dog.ceo/breeds/beagle/n02088364_14431.jpg",
+      "https://images.dog.ceo/breeds/beagle/n02088364_15787.jpg",
+      "https://images.dog.ceo/breeds/beagle/n02088364_16588.jpg",
+      "https://images.dog.ceo/breeds/beagle/n02088364_3758.jpg",
+      "https://images.dog.ceo/breeds/beagle/n02088364_852.jpg",
+      "https://images.dog.ceo/breeds/beagle/n02088364_9849.jpg"
+    ],
+    "raca": "Beagle",
+    "raca_pt": "Beagle"
+  },
+  {
+    "id": "15cad76e-d558-4ab1-a8a5-bd1f876423a5",
+    "nome": "Daisy",
+    "idade": 4,
+    "descricao": "Daisy é uma Boxer brincalhona que adora correr. Muito ligada à sua família.",
+    "tracos": [
+      "brincalhona",
+      "leal",
+      "valente"
+    ],
+    "doencas": [
+      "Miocardiopatia"
+    ],
+    "imagens": [
+      "https://images.dog.ceo/breeds/boxer/n02108089_1072.jpg",
+      "https://images.dog.ceo/breeds/boxer/n02108089_11074.jpg",
+      "https://images.dog.ceo/breeds/boxer/n02108089_122.jpg",
+      "https://images.dog.ceo/breeds/boxer/n02108089_125.jpg",
+      "https://images.dog.ceo/breeds/boxer/n02108089_13738.jpg",
+      "https://images.dog.ceo/breeds/boxer/n02108089_1418.jpg",
+      "https://images.dog.ceo/breeds/boxer/n02108089_15432.jpg",
+      "https://images.dog.ceo/breeds/boxer/n02108089_2953.jpg",
+      "https://images.dog.ceo/breeds/boxer/n02108089_5266.jpg",
+      "https://images.dog.ceo/breeds/boxer/n02108089_8969.jpg"
+    ],
+    "raca": "Boxer",
+    "raca_pt": "Boxer"
+  },
+  {
+    "id": "a7375df3-fc34-4f29-aaaa-c0574e660ad1",
+    "nome": "Rocky",
+    "idade": 7,
+    "descricao": "Rocky é um Bulldog inglês que vive em modo descanso. Aprecia ambientes frescos e um bom sofá.",
+    "tracos": [
+      "calmo",
+      "teimoso",
+      "companheiro"
+    ],
+    "doencas": [
+      "Síndrome braquicefálica"
+    ],
+    "imagens": [
+      "https://images.dog.ceo/breeds/bulldog-boston/n02096585_2947.jpg",
+      "https://images.dog.ceo/breeds/bulldog-boston/n02096585_1692.jpg",
+      "https://images.dog.ceo/breeds/bulldog-boston/n02096585_5043.jpg",
+      "https://images.dog.ceo/breeds/bulldog-boston/n02096585_664.jpg",
+      "https://images.dog.ceo/breeds/bulldog-boston/n02096585_670.jpg",
+      "https://images.dog.ceo/breeds/bulldog-french/n02108915_10204.jpg",
+      "https://images.dog.ceo/breeds/bulldog-french/n02108915_1188.jpg",
+      "https://images.dog.ceo/breeds/bulldog-french/n02108915_160.jpg",
+      "https://images.dog.ceo/breeds/bulldog-french/n02108915_618.jpg",
+      "https://images.dog.ceo/breeds/bulldog-french/n02108915_8425.jpg"
+    ],
+    "raca": "Bulldog French",
+    "raca_pt": "Bulldog Francês"
+  },
+  {
+    "id": "4a1bc691-886c-4792-991d-f0f1bbbd5d93",
+    "nome": "Lucy",
+    "idade": 3,
+    "descricao": "Lucy é uma Chihuahua cheia de atitude. Gosta de chamar atenção e é muito carismática.",
+    "tracos": [
+      "confiante",
+      "vigilante",
+      "afetuosa"
+    ],
+    "doencas": "Não",
+    "imagens": [
+      "https://images.dog.ceo/breeds/chihuahua/n02085620_4700.jpg",
+      "https://images.dog.ceo/breeds/chihuahua/n02085620_12101.jpg",
+      "https://images.dog.ceo/breeds/chihuahua/n02085620_3593.jpg",
+      "https://images.dog.ceo/breeds/chihuahua/n02085620_199.jpg",
+      "https://images.dog.ceo/breeds/chihuahua/n02085620_3402.jpg",
+      "https://images.dog.ceo/breeds/chihuahua/n02085620_4016.jpg",
+      "https://images.dog.ceo/breeds/chihuahua/n02085620_4814.jpg",
+      "https://images.dog.ceo/breeds/chihuahua/n02085620_5312.jpg",
+      "https://images.dog.ceo/breeds/chihuahua/n02085620_712.jpg",
+      "https://images.dog.ceo/breeds/chihuahua/n02085620_8420.jpg"
+    ],
+    "raca": "Chihuahua",
+    "raca_pt": "Chihuahua"
+  },
+  {
+    "id": "83c5d41e-cef3-44d6-9dcf-9a676ff3dff5",
+    "nome": "Duke",
+    "idade": 5,
+    "descricao": "Duke é um Doberman atlético e atento. Ideal para quem busca proteção e fidelidade.",
+    "tracos": [
+      "vigilante",
+      "inteligente",
+      "protetor"
+    ],
+    "doencas": [
+      "Síndrome de Wobbler"
+    ],
+    "imagens": [
+      "https://images.dog.ceo/breeds/doberman/n02107142_5570.jpg",
+      "https://images.dog.ceo/breeds/doberman/n02107142_473.jpg",
+      "https://images.dog.ceo/breeds/doberman/n02107142_12191.jpg",
+      "https://images.dog.ceo/breeds/doberman/n02107142_1251.jpg",
+      "https://images.dog.ceo/breeds/doberman/n02107142_13356.jpg",
+      "https://images.dog.ceo/breeds/doberman/n02107142_15436.jpg",
+      "https://images.dog.ceo/breeds/doberman/n02107142_16512.jpg",
+      "https://images.dog.ceo/breeds/doberman/n02107142_3227.jpg",
+      "https://images.dog.ceo/breeds/doberman/n02107142_5196.jpg",
+      "https://images.dog.ceo/breeds/doberman/n02107142_7206.jpg"
+    ],
+    "raca": "Doberman",
+    "raca_pt": "Doberman"
+  },
+  {
+    "id": "863c1768-20ee-4546-a0f3-4d20058d9793",
+    "nome": "Sadie",
+    "idade": 2,
+    "descricao": "Sadie é uma Bulldog francês engraçadinha e muito amável. Gosta de colo e aconchego.",
+    "tracos": [
+      "afetuosa",
+      "sociável",
+      "calma"
+    ],
+    "doencas": "Não",
+    "imagens": [
+      "https://images.dog.ceo/breeds/bulldog-boston/n02096585_12776.jpg",
+      "https://images.dog.ceo/breeds/bulldog-boston/n02096585_1586.jpg",
+      "https://images.dog.ceo/breeds/bulldog-boston/n02096585_1992.jpg",
+      "https://images.dog.ceo/breeds/bulldog-boston/n02096585_6567.jpg",
+      "https://images.dog.ceo/breeds/bulldog-french/IMG_1657.jpg",
+      "https://images.dog.ceo/breeds/bulldog-french/n02108915_110.jpg",
+      "https://images.dog.ceo/breeds/bulldog-french/n02108915_11327.jpg",
+      "https://images.dog.ceo/breeds/bulldog-french/n02108915_2980.jpg",
+      "https://images.dog.ceo/breeds/bulldog-french/n02108915_3988.jpg",
+      "https://images.dog.ceo/breeds/bulldog-french/n02108915_5306.jpg"
+    ],
+    "raca": "Bulldog French",
+    "raca_pt": "Bulldog Francês"
+  },
+  {
+    "id": "9cf123c3-0ba1-467b-a05d-1cc02d832e4b",
+    "nome": "Oscar",
+    "idade": 4,
+    "descricao": "Oscar é um Golden Retriever alegre e muito receptivo. Está sempre pronto para brincar.",
+    "tracos": [
+      "amistoso",
+      "ativo",
+      "inteligente"
+    ],
+    "doencas": [
+      "Displasia de quadril"
+    ],
+    "imagens": [
+      "https://images.dog.ceo/breeds/retriever-chesapeake/n02099849_953.jpg",
+      "https://images.dog.ceo/breeds/retriever-curly/n02099429_120.jpg",
+      "https://images.dog.ceo/breeds/retriever-curly/n02099429_2186.jpg",
+      "https://images.dog.ceo/breeds/retriever-flatcoated/n02099267_2347.jpg",
+      "https://images.dog.ceo/breeds/retriever-flatcoated/n02099267_3441.jpg",
+      "https://images.dog.ceo/breeds/retriever-flatcoated/n02099267_979.jpg",
+      "https://images.dog.ceo/breeds/retriever-golden/Z6A_4525_200809.jpg",
+      "https://images.dog.ceo/breeds/retriever-golden/n02099601_3360.jpg",
+      "https://images.dog.ceo/breeds/retriever-golden/n02099601_5544.jpg",
+      "https://images.dog.ceo/breeds/retriever-golden/n02099601_7588.jpg"
+    ],
+    "raca": "Retriever Golden",
+    "raca_pt": "Golden Retriever"
+  },
+  {
+    "id": "7e54ac13-ec99-4769-8c95-cd65db63ba1d",
+    "nome": "Mia",
+    "idade": 6,
+    "descricao": "Mia é uma Husky Siberiana energética que adora correr e uivar. Muito independente.",
+    "tracos": [
+      "resistente",
+      "independente",
+      "viva"
+    ],
+    "doencas": "Não",
+    "imagens": [
+      "https://images.dog.ceo/breeds/husky/enola-vpr-01.jpg",
+      "https://images.dog.ceo/breeds/husky/n02110185_10597.jpg",
+      "https://images.dog.ceo/breeds/husky/n02110185_11635.jpg",
+      "https://images.dog.ceo/breeds/husky/n02110185_14056.jpg",
+      "https://images.dog.ceo/breeds/husky/n02110185_1614.jpg",
+      "https://images.dog.ceo/breeds/husky/n02110185_1794.jpg",
+      "https://images.dog.ceo/breeds/husky/n02110185_2728.jpg",
+      "https://images.dog.ceo/breeds/husky/n02110185_5159.jpg",
+      "https://images.dog.ceo/breeds/husky/n02110185_7888.jpg",
+      "https://images.dog.ceo/breeds/husky/n02110185_8860.jpg"
+    ],
+    "raca": "Husky",
+    "raca_pt": "Husky Siberiano"
+  },
+  {
+    "id": "ddf547ab-a389-4c4d-a3eb-545648b434d2",
+    "nome": "Zeus",
+    "idade": 3,
+    "descricao": "Zeus é um Labrador Retriever sociável e brincalhão. Nada como nadar e correr atrás de bola.",
+    "tracos": [
+      "brincalhão",
+      "amigável",
+      "ativo"
+    ],
+    "doencas": [
+      "Obesidade"
+    ],
+    "imagens": [
+      "https://images.dog.ceo/breeds/labrador/IMG_2752.jpg",
+      "https://images.dog.ceo/breeds/labrador/lab_young.jpg",
+      "https://images.dog.ceo/breeds/labrador/n02099712_1383.jpg",
+      "https://images.dog.ceo/breeds/labrador/n02099712_3364.jpg",
+      "https://images.dog.ceo/breeds/labrador/n02099712_4462.jpg",
+      "https://images.dog.ceo/breeds/labrador/n02099712_5338.jpg",
+      "https://images.dog.ceo/breeds/labrador/n02099712_5343.jpg",
+      "https://images.dog.ceo/breeds/labrador/n02099712_6644.jpg",
+      "https://images.dog.ceo/breeds/labrador/n02099712_6664.jpg",
+      "https://images.dog.ceo/breeds/labrador/n02099712_719.jpg"
+    ],
+    "raca": "Labrador",
+    "raca_pt": "Labrador Retriever"
+  }
+]
