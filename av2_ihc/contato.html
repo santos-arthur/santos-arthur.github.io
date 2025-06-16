@@ -7,8 +7,53 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
-        darkMode: 'class'
+      darkMode: 'class'
       };
+    </script>
+    <script>
+      // Toast utility
+      function showToast(message, type = "info") {
+      // Remove existing toast if any
+      const old = document.getElementById("toast-msg");
+      if (old) old.remove();
+
+      const colors = {
+        info: "bg-blue-500",
+        success: "bg-green-500",
+        error: "bg-red-500"
+      };
+      const toast = document.createElement("div");
+      toast.id = "toast-msg";
+      toast.className = `fixed bottom-6 right-6 z-50 px-6 py-3 rounded shadow-lg text-white font-semibold ${colors[type] || colors.info} transition`;
+      toast.textContent = message;
+      document.body.appendChild(toast);
+
+      setTimeout(() => {
+        toast.classList.add("opacity-0");
+        setTimeout(() => toast.remove(), 400);
+      }, 2000);
+      }
+
+      window.addEventListener("DOMContentLoaded", () => {
+      const form = document.querySelector("form");
+      if (!form) return;
+      form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        showToast("Enviando...", "info");
+        setTimeout(() => {
+        if (Math.random() < 0.5) {
+          showToast("Mensagem enviada com sucesso!", "success");
+          form.reset();
+          setTimeout(() => {
+            window.location.href = "index.html";
+          }, 1000);
+
+        } else {
+          showToast("Erro ao enviar. Tente novamente.", "error");
+        }
+        }, 2000);
+      });
+      });
     </script>
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css" />
@@ -136,3 +181,4 @@
     </footer>
   </body>
 </html>
+</script>
